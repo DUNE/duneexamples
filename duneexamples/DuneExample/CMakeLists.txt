@@ -6,7 +6,7 @@ add_subdirectory(test)
 #message(STATUS "ROOT_BASIC_LIB_LIST=${ROOT_BASIC_LIB_LIST}")
 
 art_make(BASENAME_ONLY
-         dune_DuneExample_dict
+         duneexamples_DuneExample_dict
          LIB_LIBRARIES
          art::Persistency_Provenance canvas
          ROOT_BASIC_LIB_LIST

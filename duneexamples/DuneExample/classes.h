@@ -1,1 +1,1 @@
-#include "dune/DuneExample/MyClass.h"
+#include "duneexamples/DuneExample/MyClass.h"
