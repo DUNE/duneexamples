@@ -36,7 +36,7 @@ cmc(size_t ievcount=0, std::string const& filename="prodgenie_nu_dune10kt_1x2x6_
 
   InputTag mcptag{ tagstring };
   // Create a vector of length 1, containing the given filename.
-  vector<string> filenames(1, filename);
+  const vector<string> filenames(1, filename);
 
   for (gallery::Event ev(filenames); !ev.atEnd(); ev.next()) {
     if (evcounter == ievcount)

@@ -35,7 +35,7 @@ pdspdisp(std::string const& filename, size_t ievcount=0, std::string spacepointt
 
   InputTag recobspacepoint_tag{ spacepointtagstring };
   // Create a vector of length 1, containing the given filename.
-  vector<string> filenames(1, filename);
+  const vector<string> filenames(1, filename);
 
   for (gallery::Event ev(filenames); !ev.atEnd(); ev.next()) {
     if (evcounter == ievcount)

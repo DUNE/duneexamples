@@ -52,7 +52,7 @@ void meanrms(std::string const& filename,
   //InputTag rawdigit_tag{ "daq" };
   //InputTag rawdigit_tag{ "SplitterInput:TPC" };   // for split 35t data
   // Create a vector of length 1, containing the given filename.
-  vector<string> filenames(1, filename);
+  const vector<string> filenames(1, filename);
 
   for (gallery::Event ev(filenames); !ev.atEnd(); ev.next()) {
     if (evcounter == ievcount)
