@@ -48,7 +48,7 @@ evd_311(std::string const& filename, size_t ievcount, std::string const& inputta
 
   InputTag rawdigit_tag(inputtag);
 
-  vector<string> filenames(1, filename);
+  const vector<string> filenames(1, filename);
 
   for (gallery::Event ev(filenames); !ev.atEnd(); ev.next()) {
     if (evcounter == ievcount)

@@ -59,7 +59,7 @@ evd_rawdigits(std::string const& filename, size_t ievcount, bool autoped=true, i
   // InputTag rawdigit_tag{ "daq" }; for 3x1x1 data and MC
   //InputTag rawdigit_tag{ "SplitterInput:TPC" };   // for split 35t data
   // Create a vector of length 1, containing the given filename.
-  vector<string> filenames(1, filename);
+  const vector<string> filenames(1, filename);
 
   for (gallery::Event ev(filenames); !ev.atEnd(); ev.next()) {
     if (evcounter == ievcount)
