@@ -8,7 +8,7 @@ add_subdirectory(test)
 art_make(BASENAME_ONLY
          duneexamples_DuneExample_dict
          LIB_LIBRARIES
-         art::Persistency_Provenance canvas
+         art::Persistency_Provenance canvas::canvas
          ROOT::Core
          ROOT::HistPainter
          NO_PLUGINS
