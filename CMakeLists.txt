@@ -24,11 +24,11 @@ cet_set_compiler_flags(DIAGS CAUTIOUS
 
 cet_report_compiler_flags()
 
-find_package( art REQUIRED )
-find_package( art_root_io REQUIRED )
-find_package( canvas_root_io REQUIRED )
-find_package( Boost REQUIRED )
-find_package(ROOT REQUIRED)
+find_package( art REQUIRED EXPORT )
+find_package( art_root_io REQUIRED EXPORT )
+find_package( canvas_root_io REQUIRED EXPORT )
+find_package( Boost REQUIRED EXPORT )
+find_package(ROOT REQUIRED EXPORT )
 
 # macros for artdaq_dictionary and simple_plugin
 include(ArtDictionary)
