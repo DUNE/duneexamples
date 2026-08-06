@@ -11,7 +11,7 @@ cet_test_env_prepend(CET_PLUGIN_PATH ${TRANSITIVE_PATHS_WITH_LIBRARY_DIR})
 cet_test_env_prepend(FW_SEARCH_PATH ".")
 cet_test_env_prepend(ROOT_LIBRARY_PATH "." ${PROJECT_BINARY_DIR}/lib)
 
-cet_test(test_MyClass SOURCES test_MyClass.cxx
+cet_test(test_MyClass SOURCE test_MyClass.cxx
   LIBRARIES
     duneexamples_DuneExample
     ROOT::Core
